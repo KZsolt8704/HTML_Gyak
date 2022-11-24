@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlapok</title>
+</head>
+<body>
+    <p>A <code><mark>"header"</mark></code> taggal fejlécet tudunk létrehozni, ami álltalában tartalmazza a navigációs sávot.</p>
+    <header>
+        <nav>
+            <a href="index.html">Kezdő lap</a>
+            <a href="table.html">Táblázatok</a>
+        </nav>
+    </header>
+    <hr>
+    <h1>Űrlapok!</h1>
+    <p>Az űrlapokat mindíg <code><mark>"form"</mark></code> teg-ek közé kell tenni!</p>
+    <p>
+        A <code><mark>"form"</mark></code> teg-nek van egy <code><mark>"method"</mark></code> attribútuma, mely <code><mark>"GET"</mark></code> vagy <code><mark>"POST"</mark></code>
+        értéket vehet fel!
+    </p>
+    <p>Ha <code><mark>"GET"</mark></code> értékkel ellátott űrlappal küldjük el az adatokat, akkor azok az <mark>url-ben láthatók lesznek!</mark></p>
+    <p>Ha <code><mark>"POST"</mark></code> értékkel ellátott űrlappal küldjük el az adatokat, akkor egy <mark>http recvest-ben küldi el az adatokat a háttérben, védetten!</mark></p>
+    <p>A <code><mark>"fieldset"</mark></code> teg, a <code><mark>"form"</mark></code>-on belüli űrlap elemeknek a csoportosítására szolgál!</p>
+    <p>A <code><mark>"fieldset"</mark></code>-nek be lehet állítani címet a <code><mark>"legend"</mark></code> teg-gel, mely az űrlap köré egy szegélyt is elhelyez!</p>
+    <p>Az <code><mark>"input"</mark></code> teg szolgál az űrlap elem elhelyezésére, melynek a <code><mark>"type"</mark></code> attribútumában tudjuk megadni, hogy milyen típusú űrlapot elemet szeretnénk!</p>
+    <p>Példák:</p>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Szöveges mező</legend>
+            <label for="inp">SZöveg: </label><input type="text" name="text" id="inp">
+        </fieldset>
+        <fieldset>
+            <legend>e-mail címet bekérő mező</legend>
+            <label for="email">E-mail: </label><input type="email" name="email" id="email">
+        </fieldset>
+        <fieldset>
+            <legend>Jelszót bekérő mező</legend>
+            <label for="pswrd">Jelszó </label><input type="password" name="pswrd" id="pswrd">
+        </fieldset>
+        <fieldset>
+            <legend>Telefonszámot bekérő mező</legend>
+            <label for="tel">Telefonszám: </label><input type="tel" name="tel" id="tel">
+        </fieldset>
+        <fieldset>
+            <legend>file kiválasztás</legend>
+            <label for="file">Fájl kiválasztása: </label><input type="file" name="file" id="file">
+        </fieldset>
+        <fieldset>
+            <legend>Submit</legend>
+            <input type="submit" value="küldés">
+            <button type="submit">küldés</button>
+        </fieldset>
+        <fieldset>
+            <legend>gomb</legend>
+            <input type="button" value="gomb">
+            <button>gomb</button>
+        </fieldset>
+        <fieldset>
+            <legend>Checkbox</legend>
+            <label for="chbx">válassz ki!</label>
+            <input type="checkbox" name="chbx" id="chbx">
+        </fieldset>
+        <fieldset>
+            <legend>radio btn</legend>
+            <label for="elso">Első</label><input type="radio" name="valasz" id="elso">
+            <label for="masodik">Második</label><input type="radio" name="valasz" id="masodik">
+            <label for="harmadik">Harmadik</label><input type="radio" name="valasz" id="harmadik">
+        </fieldset>
+        <fieldset>
+            <legend>leugró ablakból kiválasztás</legend>
+            <select name="select" id="select">
+                <option value="red">piros</option>
+                <option value="yellow">sárga</option>
+                <option value="blue">kék</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>csoportosított leugró ablakból kiválasztás</legend>
+            <select name="select2" id="slct2">
+                <optgroup label="olasz autók">
+                    <option value="fiat">Fiat</option>
+                    <option value="alfa">Alfa Romeo</option>                    
+                </optgroup>
+                <optgroup label="német autók">
+                    <option value="bmw">BMW</option>
+                    <option value="audi">Audi</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Szövegdoboz</legend>
+            <textarea name="szdoboz" id="txtbx" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Progress bar</legend>
+            <progress value="30" max="100"></progress>
+        </fieldset>
+       
+    </form>
+    <p>A <code><mark>"footer"</mark></code> taggal láblécet tudunk létrehozni!</p>
+    <footer>
+        <p>Ezt a footert Kopeecskó Zsolt készítette el!</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Táblázatok</title>
+</head>
+<body>
+    <p>A <code><mark>"header"</mark></code> taggal fejlécet tudunk létrehozni, ami álltalában tartalmazza a navigációs sávot.</p>
+    <header>
+        <nav>
+            <a href="index.html">Kezdő lap</a>
+            <a href="form.html">Űrlapok</a>
+        </nav>
+    </header>
+    <hr>
+    <H1>Táblázatok</H1>
+    <table>
+        <caption>Könyvek</caption>
+        <colgroup>
+            <col>
+            <col style="background-color: aqua;">
+            <col>
+            <col style="background-color: yellow;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Cikkszám</th>
+                <th>Szerző</th>
+                <th>Cím</th>
+                <th>Ár</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>123313</td>
+                <td>Frei Tamás</td>
+                <td>Bábel</td>
+                <td>4464</td>
+            </tr>
+            <tr>
+                <td>985632</td>
+                <td>Daniel Goleman</td>
+                <td>Érzelmi inteligencia</td>
+                <td>3790</td>
+            </tr>
+            <tr>
+                <td>762465</td>
+                <td>Nicolas Barreau</td>
+                <td>Piciny Csodák Kávézója</td>
+                <td rowspan="2">3315</td>
+            </tr>
+            <tr>
+                <td>782756</td>
+                <td>Bödöcs Tibor</td>
+                <td>Meg se kínáltak</td>
+                
+            </tr>
+            <tr>
+                <td>628752</td>
+                <td>Rilex Sager</td>
+                <td>Zárj minden ajtót!</td>
+                <td>2793</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Összesen</td>
+                <td>17686</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

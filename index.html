@@ -17,6 +17,14 @@
 </head>
 
 <body>
+    <p>A <code><mark>"header"</mark></code> taggal fejlécet tudunk létrehozni, ami álltalában tartalmazza a navigációs sávot.</p>
+    <header>
+        <nav>
+            <a href="form.html">Űrlapok</a>
+            <a href="table.html">Táblázatok</a>
+        </nav>
+    </header>
+    <hr>
     <p>
         Lorem ipsum dolor sit amet,<br> consectetur <u>adipiscing</u> elit. Nam <i>hendrerit</i> maximus euismod. Praesent lobortis sem eu
         nisl dictum, ac ullamcorper diam efficitur.
@@ -26,14 +34,13 @@
         pellentesque tortor <sub>egestas convallis nec ut risus.</sub>
         <mark>Vestibulum mauris urna,</mark> euismod at est sit amet, volutpat suscipit tortor. Nam vehicula consectetur leo, quis
         gravida tellus congue vulputate.
-        <hr>
-        <blockquote cite="www.w3c.com">
-            Pellentesque id cursus velit, nec faucibus mauris. Phasellus accumsan mollis neque in elementum. Vestibulum sed
-            magna eu diam eleifend auctor et eget ipsum.
-            Donec odio augue, fringilla sed laoreet in, vestibulum quis nunc.
-        </blockquote>
-        <abbr title="Hiper Text Markup Language">HTML</abbr>
-    </p>
+    </p><hr>
+    <abbr title="Hiper Text Markup Language">HTML</abbr>
+    <blockquote cite="www.w3c.com">
+        Pellentesque id cursus velit, nec faucibus mauris. Phasellus accumsan mollis neque in elementum. Vestibulum sed
+        magna eu diam eleifend auctor et eget ipsum.
+        Donec odio augue, fringilla sed laoreet in, vestibulum quis nunc.
+    </blockquote>
     <h1>Első Címsor</h1>
     <h2>Második Címsor</h2>
     <h3>Harmadik Címsor</h3>
@@ -49,36 +56,34 @@
         consequat viverra tristique. Duis condimentum magna vitae sem
         bibendum rhoncus. Nullam nec nunc dui.
     </p>
-    <p>Ma reggel <time>8</time> órakor keltem!</p>
+    <p>Ma reggel <time>08:00</time> órakor keltem!</p>
     <dl>
         <dt>Kalapács</dt>
         <dd>A kalapács az a szerszám ami mindíg kéznél van.</dd>
         <dt>Csavar</dt>
         <dd>A csavar, elemek rögzítésére szolgál.</dd>
     </dl>
-    <p>
+
         <ol type="A">
             <li>Banán</li>
             <li>virsli</li>
             <li>kolbász</li>
             <li>narancs</li>
         </ol>
-    </p>
-    <p>
+
+
         <ul>
             <li>ananász</li>
             <li>backon</li>
             <li>szeg</li>
         </ul>
-    </p>
-    <p><a href="https:\\www.google.hu" target="_blank" >Google kereső!</a></p>
+
+    <p><a href="https://www.google.hu" target="_blank" >Google kereső!</a></p>
     <p><a href="mailto:kopecsko.zsolt@gmail.com">Küggyé emilt!</a></p>
-    <p>
         <figure style="margin: 0;">
-            <img src="pexels-charles-1851164.jpg" alt="cuki kutyi" style="height: auto; max-width: 100%;">
+            <img src="pexels-charles-1851164.jpg" alt="cuki kutyi" style="height: auto; max-width: 25%;">
             <figcaption>Cuki Kutyi!</figcaption>
         </figure>
-    </p>
     
     <p>
         Nam ac metus ac turpis convallis ullamcorper non id enim. Sed et nisl turpis. Aliquam turpis ante, cursus nec
@@ -109,6 +114,57 @@
         Fusce velit quam, blandit ut ipsum vehicula, luctus aliquet felis. In faucibus lobortis justo lacinia
         vestibulum.
     </p>
+    <hr>
+    
+    <p>A <code><mark>"main"</mark></code> tag a weboldal tényleges tartalmát tartalmazza! <br>Csak egy darab lehet belőle oldalanként! <br> oldalanként egyedi tartalommal kell rendelkeznie.</p>
+    <p>Az <code><mark>"article"</mark></code> taggal fórum bejegyzést, blog bejegyzést, hírt vagy megjegyzést tudunk megkülönböztetni.</p>
+    <main>
+        <h1>Most Popular Browsers</h1>
+        <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+      
+        <article>
+          <h2>Google Chrome</h2>
+          <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+      
+        <article>
+          <h2>Mozilla Firefox</h2>
+          <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+      
+        <article>
+          <h2>Microsoft Edge</h2>
+          <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article>
+    </main>
+    <hr>
+    
+    <p>A <code><mark>"nav"</mark></code> tag a navigáció megjelölésére szolgál!</p>
+    <nav>
+        <a href="#">1. navigáció</a>
+        <a href="#">2. navigáció</a>
+    </nav>
+    <hr>
+    
+    <p>Az <code><mark>"aside"</mark></code> taggel olyan tartalmi egységet tudunk vele létrehozni, ami egy kicsit eltér a weboldal tartalmától. a tartalomhoz részben kapcsolódó bejegyzé</p>
+    <p>A hétvégén Budapesten jártam!</p>
+    <aside>
+        <h4>Budapest</h4>
+        <p>Budapest, Magyarország fővárosa!</p>
+    </aside>
+    <hr>
+
+    <p>A <code><mark>"div"</mark></code> tag saját szemantikával nem rendelekzik. Általános jelölő teg. Az oldal struktúráját lehet vele formázni.</p>
+    <div>
+        <p>Ez a bekezdés egy <code><mark>"div"</mark></code>-ben van elhelyezve!</p>
+    </div>
+    <hr>
+
+    <p>A <code><mark>"footer"</mark></code> taggal láblécet tudunk létrehozni!</p>
+    <footer>
+        <p>Ezt a footert Kopeecskó Zsolt készítette el!</p>
+    </footer>
+  
 </body>
 
 </html>
